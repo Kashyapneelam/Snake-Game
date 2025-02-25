@@ -3,8 +3,6 @@ let uSpeed = prompt("Chose your snake speed on which speed you want to play the 
 
 let inputDir = {x: 0, y:0};
 let hiScore = localStorage.getItem("hiscore");
-let hiScoreList = []
-let hiscoreVal = document.querySelector("#hiScoreShow")
 
 const foodSound = new Audio("food.mp3");
 const gameOverSound = new Audio("gameover.mp3");
@@ -69,7 +67,6 @@ const gameEngine = () => {
         if (score >= hiscoreVal) {
             localStorage.setItem("hiscore", JSON.stringify(hiscoreVal));
             hiScorePara.innerHTML = "High Score: " + score;
-            hiScoreList.appendChild(score)
         }
         scorePara.innerText = "Score: " + score;
         foodSound.play();
