@@ -1,13 +1,13 @@
 // Game constatnts & variable
-let uSpeed = prompt("Chose your snake speed on which speed you want to play the game")
+let uSpeed = prompt("Choose your snake speed on which speed you want to play the game");
 
 let inputDir = {x: 0, y:0};
 let hiScore = localStorage.getItem("hiscore");
 
-const foodSound = new Audio("food.mp3");
-const gameOverSound = new Audio("gameover.mp3");
-const moveSound = new Audio("move.mp3");
-const musicSound = new Audio("music.mp3");
+const foodSound = new Audio("EatFood.mp3");
+const gameOverSound = new Audio("gameoverSound.mp3");
+const moveSound = new Audio("moveSound.mp3");
+const musicSound = new Audio("musicSound.mp3");
 const board = document.querySelector("#board");
 const scorePara = document.querySelector("#score");
 const hiScorePara = document.querySelector("#hiScore");
